@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Outfit;
+  margin: 0;
+  padding: 0;
+  background-color: #000000e6;
+}
+.container {
+  padding: 0px 300px;
+}
+.navbar {
+  background-color: #ffffff29;
+}
+
+.navbar .container-fluid span {
+  font-size: 1.7rem;
+  font-weight: 500;
+  background: linear-gradient(45deg, #00fff2, #f6ff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-field {
+  bottom: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 0px 20px 0px;
+  background-color: #ffffff11;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 15px;
+}
+.input-box input {
+  flex: 1;
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.input-box i {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+label {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.spinner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.spinner-border {
+  margin: 0px 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: linear-gradient(45deg, #00fff228, #f6ff0034);
+  color: white;
+  text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+  background-color: #2c2c2c;
+}
+
+p{
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
